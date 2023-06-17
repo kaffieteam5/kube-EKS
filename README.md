@@ -33,6 +33,7 @@ terraform apply
 ## Configure kubectl
 ```
 terraform output kubeconfig # save output in ~/.kube/config
+sudo chown -R $USER ~/.kube/config
 aws eks --region <region> update-kubeconfig --name terraform-eks-demo
 ```
 
