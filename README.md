@@ -51,3 +51,16 @@ Make sure all the resources created by Kubernetes are removed (LoadBalancers, Se
 ```
 terraform destroy
 ```
+## How do i get IAM permissions to see cluster resources?
+After you login via your aws console, note down the arn of the iam user from IAM services
+Run:
+```
+kubectl edit cm aws-auth -n kube-system
+```
+Add the following line carefully:
+```
+  mapUsers: |
+    - userarn: arn:aws:iam::[account_id]:$iamuser
+      groups:
+        - system:masters
+ ```
