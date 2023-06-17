@@ -1,4 +1,4 @@
-# Setting up AWS EKS (Hosted Kubernetes)
+# Setting up AWS EKS (Hosted Kubernetes) Etech Consulting SOP
 
 See https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html for full guide
 
