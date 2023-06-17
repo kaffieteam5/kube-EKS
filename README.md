@@ -55,6 +55,7 @@ terraform destroy
 ```
 ## How do i get IAM permissions to see cluster resources?
 After you login via your aws console, note down the arn of the iam user from IAM services
+
 Run:
 ```
 kubectl edit cm aws-auth -n kube-system
