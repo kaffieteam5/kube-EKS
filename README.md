@@ -26,6 +26,7 @@ Make changes in providers.tf accordingly (region, optionally profile)
 ## Terraform apply
 ```
 terraform init
+terraform plan
 terraform apply
 ```
 
